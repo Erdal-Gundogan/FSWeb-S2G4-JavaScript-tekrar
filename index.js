@@ -140,7 +140,22 @@ console.log(siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
+let tekrarlar = {};
+sayilar.forEach((sayi) => {
+  if (tekrarlar[sayi] === undefined) {
+    tekrarlar[sayi] = 1;
+  } else {
+    tekrarlar[sayi]++;
+  }
+});
+
+tekraredensayilar = [];
+for (let sayi in tekrarlar) {
+  if (tekrarlar[sayi] > 1) {
+    tekraredensayilar.push(`${sayi} sayısı ${tekrarlar[sayi]} kere tekrar edilmiştir`);
+  }
+}
+console.log("Tekrar eden sayılar:",tekraredensayilar);
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
