@@ -113,7 +113,14 @@ console.log(enbuyuk);
 console.log(enkucuk);
 // 3b çözümü:
 
-/* kodlar buraya */
+ucetambolunenler = [];
+
+sayilar.forEach((sayi) => {
+  if (sayi % 3 === 0) {
+    ucetambolunenler.push(sayi)
+  }
+});
+console.log(ucetambolunenler);
 
 // 3c çözümü:
 
