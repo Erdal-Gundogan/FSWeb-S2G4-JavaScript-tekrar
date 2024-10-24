@@ -124,7 +124,8 @@ console.log(ucetambolunenler);
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi , 0);
+console.log(ucebolunenlerintoplami);
 
 // 3d çözümü
 
